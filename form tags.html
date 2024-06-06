@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form tags</title>
+  </head>
+  <body>
+    <h4>registration form</h4>
+    <form>
+      <input type="text" placeholder="username" />
+      <br /><br />
+      <input type="password" placeholder="password" />
+      <br /><br />
+      <h5>select your class</h5>
+      <br />
+      <label for="101">
+        <input type="radio" value="class 11" name="class" id="101" />class 11
+      </label>
+      <br />
+      <label for="102">
+        <input type="radio" value="class 12" name="class" id="102" />class 12
+      </label>
+      <!--give the same name for radio buttons to select one of them-->
+      <!--give the same name of value outside the input bracket-->
+      <h5>select your sub</h5>
+      <label for="math">
+        <input type="checkbox" value="maths" name="sub" id="103" /> maths
+      </label>
+      <label for="phy">
+        <input type="checkbox" value="phy" name="sub" id="104" />phy
+      </label>
+      <label for="chem">
+        <input type="checkbox" value="chem" name="sub" id="105" />chem
+      </label>
+      <label for="cs">
+        <input type="checkbox" value="cs" name="sub" id="106" />cs
+      </label>
+      <!-- Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area). 
+ -->
+      <br /><br />
+      select your city<select name="city">
+        <option value="delhi">delhi</option>
+        <option value="ahmedabad">ahmedabad</option>
+        <option value="pune">pune</option>
+        <option value="surat">surat</option>
+      </select>
+      <br /><br />
+
+      <textarea
+        name="feedback"
+        placeholder="type your feed back"
+        id="201"
+        rows="6"
+        cols="10"
+      ></textarea>
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
